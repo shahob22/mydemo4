@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mydemo4/packages/home_page.dart';
 
 class DetailPage extends StatefulWidget {
   static final String id = 'detail_page';
@@ -18,7 +19,7 @@ class _DetailPageState extends State<DetailPage> {
       body: Center(
         child: ElevatedButton(
           onPressed: (){
-            Navigator.of(context).pop();
+            Navigator.of(context).popAndPushNamed(HomePage.id);
           },
           child: Text('Back'),
         )
