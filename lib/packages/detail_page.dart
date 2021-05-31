@@ -16,7 +16,12 @@ class _DetailPageState extends State<DetailPage> {
         title: Text('DetailPage'),
       ),
       body: Center(
-        child: Text('DetailPage'),
+        child: ElevatedButton(
+          onPressed: (){
+            Navigator.of(context).pop();
+          },
+          child: Text('Back'),
+        )
       ),
     );
   }

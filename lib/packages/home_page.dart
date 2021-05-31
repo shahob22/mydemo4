@@ -14,14 +14,26 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: ElevatedButton(
-          onPressed: () { 
-            Navigator.pushNamed(context, DetailPage.id);
-          },
-          child: Text('Button one'),
-
-        ),
-      ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, DetailPage.id);
+                  },
+                  child: Text('Button one'),
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    //Navigator.of(context).pop();
+                    Navigator.pushReplacementNamed(context, DetailPage.id);
+                  },
+                  child: Text('Button two'),
+                ),
+              ],
+            ),
+    ),
     );
   }
 }
