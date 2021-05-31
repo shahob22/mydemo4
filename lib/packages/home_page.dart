@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mydemo4/packages/detail_page.dart';
 
 class HomePage extends StatefulWidget {
   static final String id = 'home_page';
@@ -14,7 +15,9 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body: Center(
         child: ElevatedButton(
-          onPressed: () {  },
+          onPressed: () { 
+            Navigator.pushNamed(context, DetailPage.id);
+          },
           child: Text('Click me!'),
 
         ),
