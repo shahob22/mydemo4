@@ -12,7 +12,12 @@ class _DetailPageState extends State<DetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      appBar: AppBar(
+        title: Text('DetailPage'),
+      ),
+      body: Center(
+        child: Text('DetailPage'),
+      ),
     );
   }
 }

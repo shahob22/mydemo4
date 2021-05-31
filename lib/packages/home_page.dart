@@ -16,9 +16,9 @@ class _HomePageState extends State<HomePage> {
       body: Center(
         child: ElevatedButton(
           onPressed: () { 
-            Navigator.pushNamed(context, DetailPage.id);
+            Navigator.pushReplacementNamed(context, DetailPage.id);
           },
-          child: Text('Click me!'),
+          child: Text('Button one'),
 
         ),
       ),
