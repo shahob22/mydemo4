@@ -3,7 +3,7 @@ import 'package:mydemo4/packages/home_page.dart';
 
 class DetailPage extends StatefulWidget {
   static final String id = 'detail_page';
-  const DetailPage({Key key}) : super(key: key);
+  const DetailPage({Key key, String input}) : super(key: key);
 
   @override
   _DetailPageState createState() => _DetailPageState();
@@ -21,7 +21,7 @@ class _DetailPageState extends State<DetailPage> {
           onPressed: (){
             Navigator.of(context).pop(HomePage.id);
           },
-          child: Text('Back'),
+          child: Text(''),
         )
       ),
     );

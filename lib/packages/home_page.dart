@@ -9,6 +9,15 @@ class HomePage extends StatefulWidget {
   _HomePageState createState() => _HomePageState();
 }
 
+Future _openDetails() async {
+  BuildContext context;
+  Navigator.of(context).push(new MaterialPageRoute(
+      builder: (BuildContext context){
+        return new DetailPage(input: "Mazzami!",);
+      },
+      ));
+}
+
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
