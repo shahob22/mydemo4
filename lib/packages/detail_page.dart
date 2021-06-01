@@ -19,7 +19,7 @@ class _DetailPageState extends State<DetailPage> {
       body: Center(
         child: ElevatedButton(
           onPressed: (){
-            Navigator.of(context).popAndPushNamed(HomePage.id);
+            Navigator.of(context).pop(HomePage.id);
           },
           child: Text('Back'),
         )
