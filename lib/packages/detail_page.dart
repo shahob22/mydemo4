@@ -3,7 +3,6 @@ import 'package:mydemo4/packages/home_page.dart';
 
 class DetailPage extends StatefulWidget {
   static final String id = 'detail_page';
-
   final String input;
   DetailPage({Key key, this.input}) : super(key: key);
 
